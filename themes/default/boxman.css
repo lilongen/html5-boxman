@@ -1,0 +1,397 @@
+.boxman {
+	background-color: #fff;
+	font-size: 13px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, Helvetica, sans-serif;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	position: relative;
+}
+.boxman button::-moz-focus-inner { 
+      border: 0; 
+}
+.boxman button { 
+      outline: none; 
+}
+.boxman .xmanCanvas {
+    opacity: 1;
+    filter: alpha(opacity=100);
+	width: 766px;
+	height: 512px;
+	border: 1px solid #999;
+	border-radius: 6px;
+}
+.boxman.MAP .xmanCanvas {
+	cursor: pointer;
+	background-image: url(images/bg.png);
+}
+
+/**
+ * 	Begin toolbar
+ */
+.boxman .toolbar {
+	width: 760px;
+	line-height: 58px;
+	height: 58px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.boxman .toolbar .btn {
+	border: 1px solid #999;
+    background-position: 6px 6px;
+	background-repeat: no-repeat;    
+	width: 44px;
+	height: 44px;
+	border-radius: 6px;
+	background-color: #ddd;	
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    display: inline-block;
+}
+.boxman .toolbar .btn:hover {
+    background-position: 12px 12px;
+	width: 56px;
+	height: 56px;
+	background-color: #FFEBCD;
+    opacity: 0.65;
+    filter: alpha(opacity = 65);	
+}
+.boxman .toolbar .btn.pressed {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    border: 1px solid #ccc;
+    background-position: 12px 12px;
+	width: 56px;
+	height: 56px;
+	background-color: #FFD700;
+}
+.boxman .btn.separatorAhead {
+	margin-left: 32px;
+}
+.boxman .btn.separatorBehind {
+	margin-right: 32px;
+}
+
+.boxman .toolbar .btn.backHome {
+	background-image: url(images/home.png);
+}
+
+.boxman .toolbar .btn.undo{
+	background-image: url(images/undo.png);
+}
+.boxman .toolbar .btn.redo{
+	background-image: url(images/redo.png);
+}
+.boxman .toolbar .btn.save{
+	background-image: url(images/save.png);
+}
+.boxman .toolbar .btn.open{
+	background-image: url(images/open.png);
+}
+.boxman .toolbar .btn.play{
+	background-image: url(images/play.png);
+}
+.boxman .toolbar .btn.pause{
+	background-image: url(images/pause.png);
+}
+.boxman .toolbar .btn.stop{
+	background-image: url(images/stop.png);
+}
+.boxman .toolbar .btn.next{
+	background-image: url(images/next.png);
+}
+.boxman .toolbar .btn.empty4FixLayout{
+	visibility: hidden;
+}
+
+
+.boxman .toolbar .btn.man{
+	background-image: url(images/man.bmp);
+}
+.boxman .toolbar .btn.box{
+	background-image: url(images/box.bmp);
+}
+.boxman .toolbar .btn.floor{
+	background-image: url(images/floor.bmp);
+}
+.boxman .toolbar .btn.destination{
+	background-image: url(images/destination.bmp);
+}
+.boxman .toolbar .btn.wall{
+	background-image: url(images/wall.bmp);
+}
+.boxman .toolbar .btn.save{
+	background-image: url(images/save.png);
+}
+.boxman .toolbar .btn.verify{
+	background-image: url(images/verify.png);
+}
+.boxman .toolbar .btn.add{
+    opacity: 0.85;
+    filter: alpha(opacity = 85);		
+	background-image: url(images/add.png);
+}
+.boxman .toolbar .btn.playAudio{
+	background-image: url(images/play.png);
+}
+/**
+ * 	End toolbar
+ */
+
+
+
+.boxman .passedUI {
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	padding: 24px;
+	border: 2px solid #999;
+	border-radius: 6px;
+	position: absolute;
+	top: 200px;
+	background-color: #fcfcfc;
+	display: none;
+}
+
+.boxman .passedUI .passedInfo {
+	font-size: 18px;
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.boxman .passedUI .btns {
+	margin-top: 24px;	
+}
+.boxman .passedUI .btn {
+	border: 1px solid #B0C4DE;
+    background-position: 27px 27px;
+	background-repeat: no-repeat;    
+	width: 126px;
+	height: 126px;
+	border-radius: 10px;
+	background-color: #ddd;	
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    display: inline-block;
+}
+.boxman .passedUI .btn.hover {
+	background-color: #FFEBCD;
+    opacity: 1;
+    filter: alpha(opacity = 100);	
+}
+.boxman .passedUI .btn.pressed {
+    opacity: 1;s
+    filter: alpha(opacity = 100);
+    border: 1px solid #ccc;
+	background-color: #FFD700;
+}
+.boxman .passedUI .btn.play {
+	background-image: url(images/passui_playback.png);
+}
+.boxman .passedUI .btn.next {
+	background-image: url(images/passui_next.png);
+}
+
+
+.boxman .levelSelector {
+	padding: 20px 32px 32px 32px;
+	border: 2px solid #B0C4DE;
+	border-radius: 6px;
+	position: absolute;
+	top: 200px;
+	background-color: #fcfcfc;
+	display: none;
+}
+.boxman .levelSelector .dlgTitle {
+	text-align: right;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	color: #777;
+}
+.boxman .levelSelector .mapPreviewer {
+    width: 240px;
+    height: 224px;
+    border: 1px solid #B0C4DE;
+    display: inline-block;
+    border-radius: 6px;
+}
+.boxman.GAME .levelSelector .mapPreviewer.locked {
+    background-image: url(images/big_lock.png);
+    background-position: -8px -16px;
+	background-repeat: no-repeat;        
+}
+.boxman .levelSelector .levelListView {
+	border: 1px solid #B0C4DE;
+	width: 280px;
+	height: 224px;
+	display: inline-block;
+	border-radius: 6px;
+	overflow-y: auto;
+	margin-left: 8px;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer {
+    width: 100%;
+    padding: 4px 0 0 12px
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer td {
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level{
+	border: 1px solid #FFDEAD;
+    background-position: 5px 5px;
+	background-repeat: no-repeat;    
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 6px;
+	background-color: #f8f8f8;
+	font-size: 18px;
+	font-weight: bold;
+	color: #555;
+	position: relative;
+	cursor: default;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level:hover,
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.hovered{
+	background-color: #FFA500 !important;
+}
+.boxman.GAME .levelSelector .levelListView .levelLayoutContainer .level.lastPassed{
+	background-color: #F4A460 !important;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.locked:hover {
+	background-color: #FFA500 !important;
+	cursor: default;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.builtin{
+	background-color: #F5DEB3;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.customized{
+	background-color: #aa0000;
+	border-color: #aa0000;
+	color: #fff;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.customized:hover,
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.customized.hovered {
+	border: 0;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level.locked{
+	background-image: url(images/lock.png);
+	background-position: 6px 5px;
+	color: #eee;
+	font-size: 0px;
+}
+.boxman.PLAYER .levelSelector .levelListView .levelLayoutContainer .level{
+	font-size: 0px;
+	background-image: url(images/middle_play.png);
+	background-position: 10px 9px;
+}
+.boxman .levelSelector .levelListView .levelLayoutContainer .level .flagOrOperator{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	bottom: 2px;
+	right: 3px;
+	background-image: url(images/record.png);
+    background-position: -3px -3px;
+	background-repeat: no-repeat;
+	display: none;
+	cursor: pointer;
+}
+.boxman.MAP .levelSelector .levelListView .levelLayoutContainer .level.hovered .flagOrOperator {
+	width: 14px;
+	height: 14px;
+	background-image: url(images/small_remove.png);
+	background-position: -1px -1px;
+	display: block;
+}
+.boxman.PLAYER .levelSelector .levelListView .levelLayoutContainer .level .flagOrOperator {
+	display: block;
+	cursor: default;
+}
+
+.boxman.GAME .levelSelector .levelListView .levelLayoutContainer .level .flagOrOperator:hover{
+	background-image: url(images/small_play.png);
+}
+.boxman.GAME .levelSelector .levelListView .levelLayoutContainer .level.hasRecord .flagOrOperator{
+	display: block;
+}
+/**
+ * 	begin home
+ */
+.boxman .home {
+	width: 700px;
+	height: 520px;
+	padding: 40px 30px 0 50px;
+}
+.boxman .home .buttons {
+	height: 200px;
+}
+.boxman .home .btn {
+	float: left;
+	border: 2px solid #eee;
+	width: 160px;
+	height: 200px;
+	border-radius: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	padding: 10px;
+	display: inline-block;
+	background-color: #A52A2A;
+	color: #eee;
+	font-family: arial;
+}
+.boxman .home .btn.spacing {
+	margin-right: 12px;
+}
+.boxman .home .btn:hover {
+	background-color: #FFA500;
+	color: #fff;
+}
+.boxman .home .instruction {
+	width: 625px;
+	margin-top: 50px;
+	margin-left: 12px;
+	font-size: 14px;
+	color: #A52A2A;
+	text-align: left;
+}
+.boxman .home .instruction tr.title1{
+	font-size: 16px;
+	font-weight: bold;
+}
+.boxman .home .instruction tr.title2{
+	color: #333;
+}
+.boxman .home .instruction td{
+	vertical-align: top;
+}
+.boxman .home .instruction td.col1 {
+	width: 25%;
+}
+.boxman .home .instruction td.col2 {
+}
+/**
+ * 	End home
+ */
+
+.boxman .unifyBorder {
+    border: 2px solid #AAAAAA;
+    border-radius: 10px;
+}
+
+.boxman .overlay {
+	background-image: url(images/bg.png);	
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}

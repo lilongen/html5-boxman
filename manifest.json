@@ -1,0 +1,12 @@
+{
+	"name" : "BoxMan",
+	"description" : "webpage first web app on chrome web store",
+	"manifest_version" : 1,
+	"version" : "0.0.1",
+	"app": {
+		"launch" :{
+			"local_path" : "boxman-dev.html"
+		}
+	},	
+	"icons" : { "16":"boxman16.png", "128": "boxman128.png" }
+}
