@@ -216,6 +216,10 @@ jQuery.extend(boxman.controller.CoreController.prototype, {
 			boxman.Runtime.map.init();
 		}
 		
+		if (boxman.Runtime.history) {//must have
+		    boxman.Runtime.history.reset();        
+		}
+		
 		this._mainPainter.clear();
 		this._mainPainter.setMap(boxman.Runtime.map);
 		this._mainPainter.drawMap();

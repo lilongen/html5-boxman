@@ -102,6 +102,7 @@ jQuery.extend(boxman.view.passedUI.prototype, {
 					btns: self._btns,
 					currentBtn: self._hoveredBtn
 				});
+				e.stopPropagation();
 			}
 
 			return;
