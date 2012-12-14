@@ -1,7 +1,7 @@
 {
 	"name" : "BoxMan",
 	"description" : "webpage first web app on chrome web store",
-	"manifest_version" : 1,
+	"manifest_version" : 2,
 	"version" : "0.0.1",
 	"app": {
 		"launch" :{
