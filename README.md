@@ -9,4 +9,4 @@ http://lilongen.github.io/html5-boxman/
 #### Turn on Graph Search Demo 
 boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(true);
 #### Turn off Graph Search Demo
-boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false)s;
+boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false);
