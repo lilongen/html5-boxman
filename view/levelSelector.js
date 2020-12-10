@@ -88,8 +88,10 @@ jQuery.extend(boxman.view.levelSelector.prototype, {
 		output += '</table>';
 		this._jqLevelListView.append(output);
 		this._jqLevels = this._jqLevelListView.find('.level').click(function() {
-            if (jQuery(this).hasClass('locked')) {
-                return;
+			if (jQuery(this).hasClass('locked')) {
+				if (!boxman.controller.CoreController.prototype._unlockAllLevels) {
+					return;
+				}
             }
 		    self._onChooseLevel(this.getAttribute('x'));
 		}).mouseover(function() {

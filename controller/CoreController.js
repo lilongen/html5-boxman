@@ -17,6 +17,8 @@ jQuery.extend(boxman.controller.CoreController.prototype, {
 	_previewPainter: null,
 	
 	_player: null,
+
+	_unlockAllLevels: false,
 	
 	init: function() {
 	    boxman.assistor.constructOverallMapRecordUuids();
@@ -82,7 +84,11 @@ jQuery.extend(boxman.controller.CoreController.prototype, {
 		this._demoPathAiAlgorithm = bDemo;
 		this._pathAIer.setTriggerAlgorithmEvent(bDemo);
 	},
-	
+
+	unlockAllLevels: function(unlock) {
+		this._unlockAllLevels = unlock;
+	},
+
 	setPathAIer: function(pathAier) {
 		if (this._flagPathWalkInProgress) {
 			return;
