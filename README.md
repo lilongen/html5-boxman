@@ -5,5 +5,8 @@
 ### Play Game URL: 
 http://lilongen.github.io/html5-boxman/
 
-### Turn on Path Finding(Graph Search) Algorithm Demo
+### Path Finding(Graph Search) Algorithm Demo
+#### Turn on Graph Search Demo 
 boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(true);
+#### Turn off Graph Search Demo
+boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false)s;
