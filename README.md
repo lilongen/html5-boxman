@@ -12,7 +12,7 @@ http://lilongen.github.io/html5-boxman/
 * Turn off Graph Search Demo   
 `boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false);`
 
-### Unlock all Levels Map
+### Unlock all Levels Map Manually
 * Unlock all levels
 `boxman.controller.CoreController.prototype.unlockAllLevels(true);`
 * restore normal mode
