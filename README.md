@@ -1,4 +1,5 @@
 # html5-boxman
+This is a practice project for tring html5 canvas features and usage.
 * html5 javscript version bxoman PUZ game
 * canvas test
 
