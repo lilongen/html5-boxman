@@ -4,7 +4,7 @@ This is a practice project for tring html5 canvas features and usage.
 * canvas test
 
 ### Play Game URL: 
-http://lilongen.github.io/html5-boxman/
+* http://lilongen.github.io/html5-boxman/
 
 ### Path Finding(Graph Search) Algorithm Demo
 * Turn on Graph Search Demo  
