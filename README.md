@@ -13,7 +13,7 @@ http://lilongen.github.io/html5-boxman/
 `boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false);`
 
 ### Unlock all Levels Map Manually
-* Unlock all levels
+* Unlock all levels   
 `boxman.controller.CoreController.prototype.unlockAllLevels(true);`
-* restore normal mode
+* restore normal mode   
 `boxman.controller.CoreController.prototype.unlockAllLevels(false);`
