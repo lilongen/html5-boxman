@@ -6,5 +6,7 @@
 http://lilongen.github.io/html5-boxman/
 
 ### Path Finding(Graph Search) Algorithm Demo
-* Turn on:  boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(true);
-* Turn off: boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false);
+* Turn on Graph Search Demo
+boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(true);
+* Turn off Graph Search Demo
+boxman.controller.CoreController.prototype.setDemoPathAiAlgorithm(false);
