@@ -17,3 +17,5 @@ This is a practice project for trying html5 canvas features and usage.
 `boxman.controller.CoreController.prototype.unlockAllLevels(true);`
 * restore normal mode   
 `boxman.controller.CoreController.prototype.unlockAllLevels(false);`
+
+
