@@ -54,6 +54,7 @@ jQuery.extend(boxman.controller.Player.prototype, {
 	    
 	    this._playbackOffset = 0;
 	    var data = boxman.Runtime.history.data();
+		
 		this._hPlaybackInterval = setInterval(function() {
 		    if (self._flagPlayback != 'play') {
 		        return;

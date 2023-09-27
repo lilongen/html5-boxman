@@ -4,6 +4,7 @@
  * Graph shortest path: A star algorithm
  *
  */
+
 boxman.util.AstarPath = {
 	
 	_MAX: Math.pow(2, 53),

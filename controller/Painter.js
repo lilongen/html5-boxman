@@ -306,11 +306,13 @@ jQuery.extend(boxman.controller.Painter.prototype, {
 		var mapNaturalRect = this.getMapNaturalRect();
 		this._setCtxStyle('Normal');
 		this._context.beginPath();
+		
 		var i;
 		for (i = 0; i <= this._map.rows; i++) {
 			this._context.moveTo(0, boxman.Definition.Map.Rect.GRID_SIDE_LENGTH * i);
 			this._context.lineTo(mapNaturalRect.width, boxman.Definition.Map.Rect.GRID_SIDE_LENGTH * i);
 		}
+
 		for (i = 0; i <= this._map.cols; i++) {
 			this._context.moveTo(boxman.Definition.Map.Rect.GRID_SIDE_LENGTH * i, 0);
 			this._context.lineTo(boxman.Definition.Map.Rect.GRID_SIDE_LENGTH * i, mapNaturalRect.height);							

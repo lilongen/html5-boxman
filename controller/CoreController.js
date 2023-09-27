@@ -28,6 +28,7 @@ jQuery.extend(boxman.controller.CoreController.prototype, {
 		PubSub.subscribe('action_select_level', this, this._openLevelSelector);
 		PubSub.subscribe('action_play_next', this, this._playNext);
 		PubSub.subscribe('action_playback', this, this._playback);
+
 		PubSub.subscribe('evt_on_direction', this, this._onDirection);
 		PubSub.subscribe('evt_on_history', this, this._onHistory);
 		PubSub.subscribe('evt_on_go_to', this, this._onGoto);
@@ -35,6 +36,7 @@ jQuery.extend(boxman.controller.CoreController.prototype, {
 		PubSub.subscribe('evt_on_save_map', this, this._onSaveMap);
 		PubSub.subscribe('evt_on_verify_map', this, this._onVerifyMap);
 		PubSub.subscribe('evt_on_pathai_demo_finished', this, this._onPathAiDemoFinished);
+
 		PubSub.subscribe('action_preview_map', this, this._previewMap);
 		PubSub.subscribe('action_delete_map', this, this._deleteMap);
 
@@ -271,7 +273,6 @@ jQuery.extend(boxman.controller.CoreController.prototype, {
 		var translateCoord = this._mainPainter.getTranslateCoord();
 		boxman.Runtime.canvasValidRect.left = offset.left + translateCoord.x;
 		boxman.Runtime.canvasValidRect.top = offset.top + translateCoord.y;
-		
 		
 		boxman.Runtime.canvasValidRect.width = mapSize.width;
 		boxman.Runtime.canvasValidRect.height = mapSize.height;
